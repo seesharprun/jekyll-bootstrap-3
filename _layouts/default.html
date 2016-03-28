@@ -30,7 +30,7 @@
             {% assign nodes = site.html_pages | sort: 'order' %}
             {% for node in nodes %}
               {% if page.url == node.url %}
-                <li class="active"><a href="{{site.url}}{{node.path}}" class="active">{{node.url}}</a></li>
+                <li class="active"><a href="{{site.url}}{{node.path}}" class="active">{{node.title}}</a></li>
               {% else %}
                 <li><a href="{{site.url}}{{node.path}}">{{node.title}}</a></li>
               {% endif %}
