@@ -30,9 +30,9 @@
             {% assign nodes = site.html_pages | sort: 'order' %}
             {% for node in nodes %}
               {% if page.url == node.url %}
-                <li class="active"><a href="{{site.url}}" class="active">{{node.title}}</a></li>
+                <li class="active"><a href="{{site.url}}" class="active">{{node.url}}</a></li>
               {% else %}
-                <li><a href="{{node.url}}">{{node.title}}</a></li>
+                <li><a href="{{node.url}}">{{node.path}}</a></li>
               {% endif %}
             {% endfor %}
           </ul>
